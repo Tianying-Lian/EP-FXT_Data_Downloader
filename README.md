@@ -130,17 +130,14 @@ For each observation, the tool creates a separate directory:
 
 ```text
 output/
+├── fxt_download_YYYYMMDD_HHMMSS.log
 └──(Source_Name)
     └──OBS_ID_FXTB_02/
         ├── OBS_ID_FXTB_02_user.zip
         └── OBS_ID_FXTB_02_sources.csv
 ```
 
-A log file is also created:
-
-```text
-fxt_download_YYYYMMDD_HHMMSS.log
-```
+A log file is also created
 
 ## Detector filtering
 
@@ -178,4 +175,5 @@ The server may report:
 ```
 
 before providing a valid download link. The source CSV can still be downloaded independently.
+Check `fxt_download_YYYYMMDD_HHMMSS.log` for any messages marked `[err]`.
 
