@@ -104,13 +104,13 @@ The source catalogue should contain the columns required by the EP-FXT API, it s
 
 ```text
 Source Name
-Star Time
-End Time
 RA
 DEC
+Star Time
+End Time
 Radius
 ```
-See the `source_list_example.csv`, `Radius` is the searching radius.
+See the `source_list_example.csv`, `Radius` is the searching radius in degrees.
 
 ### Observation list
 
