@@ -70,7 +70,7 @@ python get_fxt.py \
 
 ## Command-line options
 
-| Option | Description | Applies to | Default |
+| Option | Description | Applied Mode | Default |
 |---|---|---|---|
 | `--mode` | `source` or `obslist` | Both | Required |
 | `--catalog` | Source catalogue CSV | `source` only | Required for `source` |
