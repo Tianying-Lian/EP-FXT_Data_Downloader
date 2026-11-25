@@ -102,14 +102,15 @@ python get_fxt.py \
 
 The source catalogue should contain the columns required by the EP-FXT API, it should contains at least:
 
-```Source Name
+```text
+Source Name
 Star Time
 End Time
 RA
 DEC
 Radius
 ```
-See the source_list_example.csv, 'Radius' is the searching radius.
+See the `source_list_example.csv`, `Radius` is the searching radius.
 
 ### Observation list
 
@@ -121,7 +122,7 @@ detnam
 version
 ```
 
-See the fxt_obs_list_example.csv. `version` must be two digits; values below 10 are zero-padded. The default version is `01`.
+See the `fxt_obs_list_example.csv`. `version` must be two digits; values below 10 are zero-padded. The default version is `01`.
 
 ## Output structure
 
@@ -160,11 +161,11 @@ Both detectors:
 --detnam=ALL
 ```
 
-## Warning
+## Warning ⚠️⚠️⚠️
 
 Monitor your login status, as the session may expire after several hours.
 
-Please avoid downloading many (more than 60) observations per hour to reduce the load on the website.
+Please avoid downloading many (more than 60 ~ 100) observations per hour to reduce the load on the website.
 
 
 ### User ZIP download fails
