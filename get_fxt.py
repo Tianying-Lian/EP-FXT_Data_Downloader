@@ -360,6 +360,7 @@ def main():
                 run_batch(df, args.output)
         
     elif args.mode == 'obslist':
+        
         df = pd.read_csv(args.obs_list, dtype=str)
         run_batch(df, args.output)
 
