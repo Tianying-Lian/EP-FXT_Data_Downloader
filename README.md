@@ -70,18 +70,18 @@ python get_fxt.py \
 
 ## Command-line options
 
-| Option | Description | Default |
-|---|---|---|
-| `--mode` | `source` or `obslist` | Required |
-| `--catalog` | Source catalogue CSV | None |
-| `--obs-list` | Existing observation-list CSV | None |
-| `--detnam` | `FXTA`, `FXTB`, or `ALL` | `ALL` |
-| `--output` | Output directory | `./fxt_data` |
-| `--username` | Einstein Probe username | Required |
-| `--visible` | Show the browser window | Disabled |
-| `--page-timeout` | Page timeout in seconds | `300` |
-| `--async-timeout` | Maximum ZIP packaging wait in seconds | `300` |
-| `--retries` | Number of retries per observation | `2` |
+| Option | Description | Applies to | Default |
+|---|---|---|---|
+| `--mode` | `source` or `obslist` | Both | Required |
+| `--catalog` | Source catalogue CSV | `source` only | Required for `source` |
+| `--obs-list` | Existing observation-list CSV | `obslist` only | Required for `obslist` |
+| `--detnam` | Selects which detector to download: `FXTA`, `FXTB`, or `ALL` | `source` only | `ALL` |
+| `--output` | Output directory | Both | `./fxt_data` |
+| `--username` | Einstein Probe username | Both | Required |
+| `--visible` | Show the browser window | Both | Disabled |
+| `--page-timeout` | Page timeout in seconds | Both | `300` |
+| `--async-timeout` | Maximum ZIP packaging wait in seconds | Both | `300` |
+| `--retries` | Number of retries per observation | Both | `2` |
 
 Example with custom timeout and retry settings:
 
