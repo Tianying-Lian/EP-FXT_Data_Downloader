@@ -37,7 +37,7 @@ playwright install chromium
 ```bash
 python get_fxt.py \
     --mode=source \
-    --catalog=/path/to/TDE.csv \
+    --catalog=/path/to/source_list.csv \
     --detnam=FXTB \
     --output=/path/to/output \
     --username=YOUR_USERNAME
@@ -109,6 +109,7 @@ RA
 DEC
 Radius
 ```
+See the source_list_example.csv, 'Radius' is the searching radius.
 
 ### Observation list
 
@@ -120,7 +121,7 @@ detnam
 version
 ```
 
-`version` must be two digits; values below 10 are zero-padded. The default version is `01`.
+See the fxt_obs_list_example.csv. `version` must be two digits; values below 10 are zero-padded. The default version is `01`.
 
 ## Output structure
 
