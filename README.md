@@ -130,9 +130,10 @@ For each observation, the tool creates a separate directory:
 
 ```text
 output/
-└── OBS_ID_FXTB_02/
-    ├── OBS_ID_FXTB_02_user.zip
-    └── OBS_ID_FXTB_02_sources.csv
+└──(Source_Name)
+    └──OBS_ID_FXTB_02/
+        ├── OBS_ID_FXTB_02_user.zip
+        └── OBS_ID_FXTB_02_sources.csv
 ```
 
 A log file is also created:
