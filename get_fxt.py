@@ -44,7 +44,7 @@ def parse_args():
     parser.add_argument(
         "--mode",
         choices=["source", "obslist"],
-        default="source",
+        required=True,
         help="Search by source catalogue or use an existing observation list."
     )
 
@@ -61,7 +61,7 @@ def parse_args():
     parser.add_argument(
         "--output",
         type=Path,
-        default=Path("./data"),
+        default=Path("./fxt_data"),
         help="Output directory."
     )
 
@@ -193,7 +193,7 @@ def process_one_row(page, row: pd.Series, destination_path: Path):
     """Process one row: open the detail page and download the user-data zip + source-table CSV."""
     obs_id = str(row["obs_id"]).strip()
     detnam = str(row["detnam"]).strip()
-    version = str(row.get("version", "02")).strip()  # Use the version column directly if it exists in your df
+    version = str(row.get("version", "01")).strip()  # Use the version column directly if it exists in your df
 
     url = f"https://ep.bao.ac.cn/ep/data_center/fxt_obs_detail/{obs_id}/{detnam}/{version}"
     print(f"\n==> {obs_id} {detnam} {version}")
