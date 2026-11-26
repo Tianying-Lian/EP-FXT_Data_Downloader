@@ -102,27 +102,23 @@ python get_fxt.py \
 
 The source catalogue should contain the columns required by the EP-FXT API, it should contains at least:
 
-```text
-Source Name
-RA
-DEC
-Star Time
-End Time
-Radius
-```
-See the `source_list_example.csv`, `Radius` is the searching radius in degrees.
+| Source Name | RA | DEC | Start Time | End Time | Radius |
+|---|---:|---:|---|---|---:|
+| EP240222a | 173.0257 | 27.00489 | 7/1/2024 0:00 | 1/1/2025 0:00 | 0.1 |
+| eRASSt J153406-090333 | 233.5261 | -9.0593 | 7/1/2024 0:00 | 1/1/2025 0:00 | 0.1 |
+| eRASSt J181035-812024 | 272.6503 | -81.3399 | 7/1/2024 0:00 | 1/1/2025 0:00 | 0.1 |
 
 ### Observation list
 
 The observation list should contain at least:
 
-```text
-obs_id
-detnam
-version
-```
+| detnam | obs_id | version |
+|---|---|---|
+| FXTB | 08500000222 | 06 |
+| FXTA | 08500000222 | 06 |
+| FXTA | 08500000229 | 06 |
 
-See the `fxt_obs_list_example.csv`. `version` must be two digits; values below 10 are zero-padded. The default version is `01`.
+`version` must be two digits; values below 10 are zero-padded. The default version is `01`.
 
 ## Output structure
 
