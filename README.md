@@ -100,7 +100,7 @@ python get_fxt.py \
 
 ### Source catalogue
 
-The source catalogue should contain the columns required by the EP-FXT API, it should contains at least:
+The source catalogue should contain the columns required by the EP-FXT API:
 
 | Source Name | RA | DEC | Start Time | End Time | Radius |
 |---|---:|---:|---|---|---:|
@@ -110,7 +110,7 @@ The source catalogue should contain the columns required by the EP-FXT API, it s
 
 ### Observation list
 
-The observation list should contain at least:
+The observation list should contain:
 
 | detnam | obs_id | version |
 |---|---|---|
